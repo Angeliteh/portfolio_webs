@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Portfolio Personal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+    
+    <div class="sequence">
+  
+      <div class="seq-preloader">
+        <svg width="39" height="16" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator"><g fill="#F96D38"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"/><path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"/><path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"/></g></svg>
+      </div>
+      
+    </div>
+
+    <!-- Botón Hamburguesa para Móvil -->
+    <button class="hamburger-btn" onclick="toggleMobileNav()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Overlay para cerrar menú móvil -->
+    <div class="mobile-overlay" onclick="closeMobileNav()"></div>
+
+        <nav id="main-nav">
+          <!-- Switch de Idiomas -->
+          <div class="language-switch">
+            <div class="lang-toggle">
+              <button class="lang-btn active" onclick="changeLanguage('es')" data-lang="es">
+                <span class="flag">🇪🇸</span> ES
+              </button>
+              <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">
+                <span class="flag">🇺🇸</span> EN
+              </button>
+            </div>
+          </div>
+
+          <ul>
+            <li><a href="#1"><i class="fa fa-home"></i> <em data-translate="nav.home">Inicio</em></a></li>
+            <li><a href="#2"><i class="fa fa-user"></i> <em data-translate="nav.about">Sobre Mí</em></a></li>
+            <li><a href="#3"><i class="fa fa-cogs"></i> <em data-translate="nav.services">Servicios</em></a></li>
+            <li><a href="#4"><i class="fa fa-laptop"></i> <em data-translate="nav.projects">Proyectos Web</em></a></li>
+            <li><a href="#5"><i class="fa fa-envelope"></i> <em data-translate="nav.contact">Contacto</em></a></li>
+          </ul>
+        </nav>
+        
+        <div class="slides">
+          <div class="slide" id="1">
+            <div class="content first-content">
+              <div class="container-fluid">
+                  <div class="col-md-9">
+                      <h2 data-translate="home.title">Desarrollador Web Full-Stack</h2>
+                      <p data-translate="home.description">Especializado en crear <strong>sitios web personalizados</strong> y aplicaciones web modernas. Con más de 1.5 años de experiencia desarrollando soluciones web para diversos sectores: <em>corporativo, salud, legal, inmobiliario y más</em>. Domino tecnologías como Python, JavaScript, PHP, Node.js y frameworks modernos.</p>
+                      <div class="main-btn"><a href="#2" data-translate="home.about_btn">Sobre Mí</a></div>
+                      <div class="fb-btn"><a href="#4" data-translate="home.projects_btn">Ver Proyectos</a></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="2">
+            <div class="content second-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div class="left-content">
+                            <h2 data-translate="about.title">Sobre Mi Experiencia</h2>
+                            <p data-translate="about.intro">Soy un desarrollador web <strong>full-stack</strong> con más de 1.5 años de experiencia creando soluciones web personalizadas para diversos sectores.</p>
+                            <p data-translate="about.approach">Mi enfoque principal es el <em>desarrollo web a medida</em>, adaptándome a las necesidades específicas de cada cliente. He trabajado con empresas de diferentes industrias: corporativas, hospitales, agencias, negocios locales, sector legal e inmobiliario.</p>
+                            <p data-translate="about.technologies"><strong>Tecnologías que domino:</strong> Python (avanzado), HTML5, CSS3, JavaScript, PHP, Node.js, Bootstrap y frameworks modernos. Puedo manejar tanto el frontend como el backend de cualquier proyecto web.</p>
+                            <p data-translate="about.philosophy">Mi filosofía es simple: <em>cada web debe ser única</em> y reflejar perfectamente la identidad y objetivos del cliente. No uso plantillas genéricas, todo es desarrollado desde cero.</p>
+                          <div class="main-btn"><a href="#3" data-translate="about.services_btn">Ver Servicios</a></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-image">
+                          <img src="img/about_image.png" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="3">
+            <div class="content third-content">
+                <div class="container-fluid">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="first-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-content">
+                                                <h2 data-translate="services.custom.title">Desarrollo Web Personalizado</h2>
+                                                <p data-translate="services.custom.description">Creo sitios web completamente <strong>a medida</strong>, desde el diseño hasta la implementación. Cada proyecto es único y desarrollado desde cero para reflejar la identidad de tu marca. Utilizo las últimas tecnologías web para garantizar rendimiento, seguridad y escalabilidad.</p>
+                                                <div class="main-btn"><a href="#4" data-translate="services.projects_btn">Ver Proyectos</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-image">
+                                                <img src="landing-page-guide.png" alt="Landing Pages Profesionales">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="second-section">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="left-image">
+                                                <img src="preview-seedprod-template.png" alt="Sitios Web Multipágina">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="right-content">
+                                                <h2 data-translate="services.modern.title">Aplicaciones Web Modernas</h2>
+                                                <p data-translate="services.modern.description">Desarrollo aplicaciones web interactivas y funcionales utilizando <em>JavaScript moderno, Python y PHP</em>. Desde sistemas de gestión hasta plataformas e-commerce, creo soluciones web que automatizan procesos y mejoran la experiencia del usuario.</p>
+                                                <div class="main-btn"><a href="#4" data-translate="services.projects_btn">Ver Proyectos</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="4">
+            <div class="content fourth-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project7')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project7.title">Restaurante</h2>
+                                            <p data-translate="projects.project7.description">Sitio web para restaurante con menú digital, reservas online y delivery.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="web_restaurant_home.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project8')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project8.title">Clínica Médica</h2>
+                                            <p data-translate="projects.project8.description">Portal médico con sistema de citas, historiales y gestión de pacientes.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="medic_center_home.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project4')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project4.title">Sector Legal</h2>
+                                            <p data-translate="projects.project4.description">Plataforma web para bufete de abogados con sistema de citas y gestión de casos.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="web-legal-desktop-2.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project3')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project3.title">Agencia Digital</h2>
+                                            <p data-translate="projects.project3.description">Sitio web dinámico para agencia con portafolio interactivo y formularios de contacto.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="agency_home.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project2')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project2.title">Sistema Hospitalario</h2>
+                                            <p data-translate="projects.project2.description">Plataforma web para gestión hospitalaria con panel administrativo y base de datos.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="medical_center_landing.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <div class="thumb">
+                                    <a href="#" onclick="openProjectModal('project9')"><div class="hover-effect">
+                                        <div class="hover-content">
+                                            <h2 data-translate="projects.project9.title">Catálogo de Videos</h2>
+                                            <p data-translate="projects.project9.description">Sistema web para portafolio multimedia personal, ideal para fotógrafos y directores.</p>
+                                        </div>
+                                    </div></a>
+                                    <div class="image">
+                                        <img src="video_catalog_home.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="slide" id="5">
+            <div class="content fifth-content">
+                <div class="container-fluid">
+                    <div class="col-md-6">
+                        <div class="contact-info" style="padding: 50px; color: white;">
+                            <h2 style="margin-bottom: 30px;" data-translate="contact.title">¿Necesitas una Web?</h2>
+                            <div style="margin-bottom: 25px;">
+                                <h4><i class="fa fa-laptop" style="margin-right: 10px;"></i><span data-translate="contact.development">Desarrollo Web Full-Stack</span></h4>
+                                <p data-translate="contact.development_desc">Especializado en crear sitios web personalizados desde cero</p>
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <h4><i class="fa fa-code" style="margin-right: 10px;"></i><span data-translate="contact.technologies">Tecnologías</span></h4>
+                                <p data-translate="contact.technologies_desc">Python, JavaScript, PHP, Node.js, HTML5, CSS3, Bootstrap</p>
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <h4><i class="fa fa-clock-o" style="margin-right: 10px;"></i><span data-translate="contact.response">Tiempo de Respuesta</span></h4>
+                                <p data-translate="contact.response_desc">Respondo consultas en menos de 24 horas</p>
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <h4><i class="fa fa-globe" style="margin-right: 10px;"></i><span data-translate="contact.remote">Trabajo Remoto</span></h4>
+                                <p data-translate="contact.remote_desc">Atiendo clientes de cualquier ubicación geográfica</p>
+                            </div>
+                            <div>
+                                <h4><i class="fa fa-star" style="margin-right: 10px;"></i><span data-translate="contact.guarantee">Garantía</span></h4>
+                                <p data-translate="contact.guarantee_desc">Soporte post-entrega y garantía en todos mis proyectos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form id="contact" action="" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" data-translate-placeholder="form.name" placeholder="Tu nombre o empresa..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" data-translate-placeholder="form.email" placeholder="Tu email de contacto..." required="">
+                                  </fieldset>
+                                </div>
+                                 <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="subject" type="text" class="form-control" id="subject" data-translate-placeholder="form.subject" placeholder="Tipo de proyecto web (ej: E-commerce, Corporativo, etc.)" required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" data-translate-placeholder="form.message" placeholder="Cuéntame sobre tu proyecto web: funcionalidades que necesitas, presupuesto aproximado, tiempo de entrega..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn" data-translate="form.submit">Enviar Consulta</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="content">
+              <p data-translate="footer.copyright">Copyright &copy; 2024 Mi Portafolio Personal. Todos los derechos reservados.</p>
+          </div>
+        </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        
+
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+
+    <!-- Modal para Proyectos -->
+    <div id="projectModal" class="project-modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+                <h2 id="modalTitle">Título del Proyecto</h2>
+            </div>
+            <div class="modal-body">
+                <!-- Slider de Imágenes -->
+                <div class="project-slider">
+                    <div class="slider-container">
+                        <div class="slides-wrapper" id="modalSlides">
+                            <!-- Las imágenes se cargarán dinámicamente -->
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="changeSlide(-1)">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next-btn" onclick="changeSlide(1)">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="slider-dots" id="sliderDots">
+                        <!-- Los dots se generarán dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- Información del Proyecto (Compacta) -->
+                <div class="project-info-compact">
+                    <div class="info-row">
+                        <div class="info-col">
+                            <h4><i class="fa fa-code"></i> <span data-translate="modal.technologies">Tecnologías</span></h4>
+                            <p id="modalTechnologies">HTML5, CSS3, JavaScript...</p>
+                        </div>
+                        <div class="info-col">
+                            <h4><i class="fa fa-clock-o"></i> <span data-translate="modal.development">Desarrollo</span></h4>
+                            <p id="modalTime">24-48 horas</p>
+                        </div>
+                        <div class="info-col">
+                            <h4><i class="fa fa-industry"></i> <span data-translate="modal.sector">Sector</span></h4>
+                            <p id="modalSector">Corporativo</p>
+                        </div>
+                    </div>
+
+                    <div class="project-description">
+                        <h4><i class="fa fa-info-circle"></i> <span data-translate="modal.description">Descripción</span></h4>
+                        <p id="modalDescription">Descripción detallada del proyecto...</p>
+                    </div>
+
+                    <div class="project-features">
+                        <h4><i class="fa fa-cogs"></i> <span data-translate="modal.features">Características Principales</span></h4>
+                        <div class="features-grid" id="modalFeatures">
+                            <!-- Las características se cargarán dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="#" id="modalLiveDemo" class="live-demo-btn" target="_blank">
+                        <i class="fa fa-external-link"></i> <span data-translate="modal.live_demo">Ver Demo en Vivo</span>
+                    </a>
+                    <button onclick="closeProjectModal()" class="close-btn" data-translate="modal.close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Datos de los proyectos
+    const projectsData = {
+        project1: {
+            title: {
+                es: "Web Corporativa Profesional",
+                en: "Professional Corporate Website"
+            },
+            description: {
+                es: "Sitio web corporativo desarrollado para empresa del sector tecnológico. Incluye diseño moderno, secciones informativas, formularios de contacto y panel administrativo para gestión de contenido.",
+                en: "Corporate website developed for technology sector company. Includes modern design, informative sections, contact forms and administrative panel for content management."
+            },
+            technologies: "HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Corporativo - Tecnología",
+                en: "Corporate - Technology"
+            },
+            features: {
+                es: [
+                    "Diseño responsive",
+                    "Panel administrativo",
+                    "Formularios avanzados",
+                    "Optimización SEO",
+                    "Redes sociales",
+                    "Sistema de blog"
+                ],
+                en: [
+                    "Responsive design",
+                    "Administrative panel",
+                    "Advanced forms",
+                    "SEO optimization",
+                    "Social media",
+                    "Blog system"
+                ]
+            },
+            images: [
+                "img/first_item.jpg",
+                "img/second_item.jpg",
+                "img/third_item.jpg"
+            ],
+            liveDemo: "https://tu-proyecto1.github.io"
+        },
+        project2: {
+            title: {
+                es: "Sistema de Gestión Hospitalaria",
+                en: "Hospital Management System"
+            },
+            description: {
+                es: "Plataforma web completa para gestión hospitalaria con módulos de pacientes, citas médicas, historiales clínicos y panel administrativo. Incluye sistema de roles y permisos para diferentes tipos de usuarios.",
+                en: "Complete web platform for hospital management with patient modules, medical appointments, clinical records and administrative panel. Includes role and permission system for different user types."
+            },
+            technologies: "Python, Django, PostgreSQL, HTML5, CSS3, JavaScript",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Salud - Hospitalario",
+                en: "Healthcare - Hospital"
+            },
+            features: {
+                es: [
+                    "Gestión de pacientes",
+                    "Sistema de citas",
+                    "Historiales médicos",
+                    "Panel administrativo",
+                    "Roles y permisos",
+                    "Reportes médicos"
+                ],
+                en: [
+                    "Patient management",
+                    "Appointment system",
+                    "Medical records",
+                    "Administrative panel",
+                    "Roles & permissions",
+                    "Medical reports"
+                ]
+            },
+            images: [
+                "medical_center_landing.jpg",
+                "medical_center_landing.jpg",
+                "medical_center_landing.jpg"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_LANDING_MEDICAL_CENTER/"
+        },
+        project3: {
+            title: {
+                es: "Sitio Web para Agencia Digital",
+                en: "Digital Agency Website"
+            },
+            description: {
+                es: "Sitio web dinámico para agencia de marketing digital con portafolio interactivo, formularios de contacto avanzados y sistema de gestión de contenido. Diseño moderno y animaciones CSS.",
+                en: "Dynamic website for digital marketing agency with interactive portfolio, advanced contact forms and content management system. Modern design and CSS animations."
+            },
+            technologies: "HTML5, CSS3, JavaScript, Node.js, MongoDB, Bootstrap",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Marketing - Agencia",
+                en: "Marketing - Agency"
+            },
+            features: {
+                es: [
+                    "Portafolio interactivo",
+                    "Animaciones CSS",
+                    "Formularios avanzados",
+                    "CMS personalizado",
+                    "Galería dinámica",
+                    "Blog integrado"
+                ],
+                en: [
+                    "Interactive portfolio",
+                    "CSS animations",
+                    "Advanced forms",
+                    "Custom CMS",
+                    "Dynamic gallery",
+                    "Integrated blog"
+                ]
+            },
+            images: [
+                "agency_home.jpg",
+                "agency_web_2.png",
+                "agency_web_3.png",
+                "Black and White Simple Fashion Photo Collage (2).png"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_AGENCIA/"
+        },
+        project4: {
+            title: {
+                es: "Plataforma Legal - Bufete de Abogados",
+                en: "Legal Platform - Law Firm"
+            },
+            description: {
+                es: "Sistema web para bufete de abogados con gestión de casos, sistema de citas, biblioteca legal y portal de clientes. Incluye módulo de facturación y seguimiento de procesos legales.",
+                en: "Web system for law firm with case management, appointment system, legal library and client portal. Includes billing module and legal process tracking."
+            },
+            technologies: "PHP, Laravel, MySQL, HTML5, CSS3, JavaScript, Bootstrap",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Legal - Jurídico",
+                en: "Legal - Law"
+            },
+            features: {
+                es: [
+                    "Gestión de casos",
+                    "Sistema de citas",
+                    "Portal de clientes",
+                    "Biblioteca legal",
+                    "Facturación",
+                    "Seguimiento procesos"
+                ],
+                en: [
+                    "Case management",
+                    "Appointment system",
+                    "Client portal",
+                    "Legal library",
+                    "Billing system",
+                    "Process tracking"
+                ]
+            },
+            images: [
+                "web-legal-desktop-2.png",
+                "web legal ss 2.png",
+                "web-legal-desktop-3.png",
+                "weblegaldoble.png"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_LANDING_LEGAL_CENTER/"
+        },
+        project5: {
+            title: "Portal Inmobiliario Avanzado",
+            description: "Plataforma inmobiliaria con búsqueda avanzada, filtros múltiples, galería de propiedades, sistema de favoritos y panel para agentes inmobiliarios. Incluye mapa interactivo y calculadora de hipotecas.",
+            technologies: "JavaScript, React, Node.js, MongoDB, HTML5, CSS3",
+            time: "24-48 horas",
+            sector: "Inmobiliario - Bienes Raíces",
+            features: [
+                "Búsqueda avanzada",
+                "Filtros múltiples",
+                "Mapa interactivo",
+                "Panel de agentes",
+                "Sistema favoritos",
+                "Calculadora hipotecas"
+            ],
+            images: [
+                "img/fifth_item.jpg",
+                "img/sixth_item.jpg",
+                "img/seventh_item.jpg"
+            ],
+            liveDemo: "https://tu-proyecto5.github.io"
+        },
+        project6: {
+            title: "E-commerce Completo",
+            description: "Tienda online completa con carrito de compras, sistema de pagos, gestión de inventario, panel administrativo y módulo de envíos. Incluye sistema de cupones, reseñas de productos y analytics.",
+            technologies: "PHP, Laravel, MySQL, JavaScript, HTML5, CSS3, Stripe API",
+            time: "24-48 horas",
+            sector: "E-commerce - Retail",
+            features: [
+                "Carrito de compras",
+                "Pagos integrados",
+                "Gestión inventario",
+                "Panel admin",
+                "Sistema cupones",
+                "Analytics ventas"
+            ],
+            images: [
+                "img/sixth_item.jpg",
+                "img/seventh_item.jpg",
+                "img/eight_item.jpg"
+            ],
+            liveDemo: "https://tu-proyecto6.github.io"
+        },
+        project7: {
+            title: {
+                es: "Sitio Web para Restaurante",
+                en: "Restaurant Website"
+            },
+            description: {
+                es: "Plataforma web para restaurante con menú digital interactivo, sistema de reservas online, pedidos para delivery, galería de platos y integración con redes sociales. Diseño responsive y optimizado para móviles.",
+                en: "Web platform for restaurant with interactive digital menu, online reservation system, delivery orders, photo gallery and social media integration. Responsive design optimized for mobile devices."
+            },
+            technologies: "HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Gastronomía - Restaurante",
+                en: "Gastronomy - Restaurant"
+            },
+            features: {
+                es: [
+                    "Menú digital",
+                    "Reservas online",
+                    "Sistema delivery",
+                    "Galería platos",
+                    "Redes sociales",
+                    "Móvil optimizado"
+                ],
+                en: [
+                    "Digital menu",
+                    "Online reservations",
+                    "Delivery system",
+                    "Photo gallery",
+                    "Social networks",
+                    "Mobile optimized"
+                ]
+            },
+            images: [
+                "web_restaurant_home.jpg",
+                "web_restaurant_2.jpg",
+                "Black and White Simple Fashion Photo Collage.png"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_RESTAURANT/"
+        },
+        project8: {
+            title: {
+                es: "Portal Médico - Clínica",
+                en: "Medical Portal - Clinic"
+            },
+            description: {
+                es: "Sistema web para clínica médica con gestión de pacientes, sistema de citas online, historiales médicos digitales, módulo de facturación y portal para médicos. Incluye recordatorios automáticos y reportes.",
+                en: "Web system for medical clinic with patient management, online appointment system, digital medical records, billing module and doctor portal. Includes automatic reminders and reports."
+            },
+            technologies: "Python, Flask, PostgreSQL, HTML5, CSS3, JavaScript",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Salud - Clínica Médica",
+                en: "Healthcare - Medical Clinic"
+            },
+            features: {
+                es: [
+                    "Gestión pacientes",
+                    "Citas online",
+                    "Historiales digitales",
+                    "Portal médicos",
+                    "Recordatorios auto",
+                    "Reportes médicos"
+                ],
+                en: [
+                    "Patient management",
+                    "Online appointments",
+                    "Digital records",
+                    "Doctor portal",
+                    "Auto reminders",
+                    "Medical reports"
+                ]
+            },
+            images: [
+                "medic_center_home.jpg",
+                "medical_center_2.png",
+                "medical_center_3.png",
+                "Black and White Simple Fashion Photo Collage (1).png"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_MEDICAL_CENTER/"
+        },
+        project9: {
+            title: {
+                es: "Catálogo de Videos Personal",
+                en: "Personal Video Catalog"
+            },
+            description: {
+                es: "Sistema web para portafolio multimedia personal, ideal para fotógrafos, directores y creadores de contenido. Funciona como un 'YouTube personal' donde almacenar y mostrar trabajos audiovisuales de forma organizada y profesional.",
+                en: "Web system for personal multimedia portfolio, ideal for photographers, directors and content creators. Works as a 'personal YouTube' to store and showcase audiovisual work in an organized and professional way."
+            },
+            technologies: "HTML5, CSS3, JavaScript, PHP, MySQL, Video.js",
+            time: "24-48 horas / hours",
+            sector: {
+                es: "Multimedia - Portafolio",
+                en: "Multimedia - Portfolio"
+            },
+            features: {
+                es: [
+                    "Reproductor de video avanzado",
+                    "Categorización por proyectos",
+                    "Galería multimedia",
+                    "Panel administrativo",
+                    "Búsqueda y filtros",
+                    "Responsive design",
+                    "Optimización de carga",
+                    "Integración redes sociales"
+                ],
+                en: [
+                    "Advanced video player",
+                    "Project categorization",
+                    "Multimedia gallery",
+                    "Administrative panel",
+                    "Search and filters",
+                    "Responsive design",
+                    "Load optimization",
+                    "Social media integration"
+                ]
+            },
+            images: [
+                "video_catalog_home.jpg",
+                "video_catalog_home.jpg",
+                "video_catalog_home.jpg"
+            ],
+            liveDemo: "https://angeliteh.github.io/WEB_VIDEO_CATALOG_PERSONAL/"
+        }
+    };
+
+    let currentSlide = 0;
+    let totalSlides = 0;
+    let currentLanguage = 'es'; // Idioma por defecto
+
+    // Traducciones
+    const translations = {
+        es: {
+            // Navegación
+            'nav.home': 'Inicio',
+            'nav.about': 'Sobre Mí',
+            'nav.services': 'Servicios',
+            'nav.projects': 'Proyectos Web',
+            'nav.contact': 'Contacto',
+
+            // Sección Home
+            'home.title': 'Desarrollador Web Full-Stack',
+            'home.description': 'Especializado en crear <strong>sitios web personalizados</strong> y aplicaciones web modernas. Con más de 1.5 años de experiencia desarrollando soluciones web para diversos sectores: <em>corporativo, salud, legal, inmobiliario y más</em>. Domino tecnologías como Python, JavaScript, PHP, Node.js y frameworks modernos.',
+            'home.about_btn': 'Sobre Mí',
+            'home.projects_btn': 'Ver Proyectos',
+
+            // Sección About
+            'about.title': 'Sobre Mi Experiencia',
+            'about.intro': 'Soy un desarrollador web <strong>full-stack</strong> con más de 1.5 años de experiencia creando soluciones web personalizadas para diversos sectores.',
+            'about.approach': 'Mi enfoque principal es el <em>desarrollo web a medida</em>, adaptándome a las necesidades específicas de cada cliente. He trabajado con empresas de diferentes industrias: corporativas, hospitales, agencias, negocios locales, sector legal e inmobiliario.',
+            'about.technologies': '<strong>Tecnologías que domino:</strong> Python (avanzado), HTML5, CSS3, JavaScript, PHP, Node.js, Bootstrap y frameworks modernos. Puedo manejar tanto el frontend como el backend de cualquier proyecto web.',
+            'about.philosophy': 'Mi filosofía es simple: <em>cada web debe ser única</em> y reflejar perfectamente la identidad y objetivos del cliente. No uso plantillas genéricas, todo es desarrollado desde cero.',
+            'about.services_btn': 'Ver Servicios',
+
+            // Sección Services
+            'services.custom.title': 'Landing Pages Profesionales',
+            'services.custom.description': 'Páginas de aterrizaje <strong>enfocadas en conversión</strong> con diseño estratégico:<br><ul class="services-list"><li>SEO optimizado avanzado</li><li>Formularios inteligentes</li><li>Botones flotantes (WhatsApp)</li><li>Analytics integrado</li><li>Tiempo de carga &lt; 3 segundos</li><li>Backend: <strong>Python/PHP</strong></li></ul>',
+            'services.modern.title': 'Sitios Web Multipágina',
+            'services.modern.description': 'Sitios web completos con <strong>arquitectura escalable</strong>:<br><ul class="services-list"><li>Panel administrativo personalizado</li><li>Sistema multiidioma</li><li>Modo oscuro/claro</li><li>Blog integrado</li><li>E-commerce ready</li><li>Certificados SSL</li><li>Base de datos: <strong>MySQL/PostgreSQL</strong></li><li>Backup automático</li></ul>',
+            'services.projects_btn': 'Ver Proyectos',
+
+            // Sección Contact
+            'contact.title': '¿Necesitas una Web?',
+            'contact.development': 'Desarrollo Web Full-Stack',
+            'contact.development_desc': 'Especializado en crear sitios web personalizados desde cero',
+            'contact.technologies': 'Tecnologías',
+            'contact.technologies_desc': 'Python, JavaScript, PHP, Node.js, HTML5, CSS3, Bootstrap',
+            'contact.response': 'Tiempo de Respuesta',
+            'contact.response_desc': 'Respondo consultas en menos de 24 horas',
+            'contact.remote': 'Trabajo Remoto',
+            'contact.remote_desc': 'Atiendo clientes de cualquier ubicación geográfica',
+            'contact.guarantee': 'Garantía',
+            'contact.guarantee_desc': 'Soporte post-entrega y garantía en todos mis proyectos',
+
+            // Formulario
+            'form.name': 'Tu nombre o empresa...',
+            'form.email': 'Tu email de contacto...',
+            'form.subject': 'Tipo de proyecto web (ej: E-commerce, Corporativo, etc.)',
+            'form.message': 'Cuéntame sobre tu proyecto web: funcionalidades que necesitas, presupuesto aproximado, tiempo de entrega...',
+            'form.submit': 'Enviar Consulta',
+
+            // Modal
+            'modal.technologies': 'Tecnologías',
+            'modal.development': 'Desarrollo',
+            'modal.sector': 'Sector',
+            'modal.description': 'Descripción',
+            'modal.features': 'Características Principales',
+            'modal.close': 'Cerrar',
+            'modal.live_demo': 'Ver Demo en Vivo',
+
+            // Footer
+            'footer.copyright': 'Copyright &copy; 2024 Mi Portafolio Personal. Todos los derechos reservados.',
+
+            // Proyectos Hover
+            'projects.project1.title': 'Web Corporativa',
+            'projects.project1.description': 'Sitio web profesional para empresa con diseño moderno y funcionalidades avanzadas.',
+            'projects.project2.title': 'Sistema Hospitalario',
+            'projects.project2.description': 'Plataforma web para gestión hospitalaria con panel administrativo y base de datos.',
+            'projects.project3.title': 'Agencia Digital',
+            'projects.project3.description': 'Sitio web dinámico para agencia con portafolio interactivo y formularios de contacto.',
+            'projects.project4.title': 'Sector Legal',
+            'projects.project4.description': 'Plataforma web para bufete de abogados con sistema de citas y gestión de casos.',
+            'projects.project5.title': 'Inmobiliaria',
+            'projects.project5.description': 'Portal inmobiliario con búsqueda avanzada, filtros y galería de propiedades.',
+            'projects.project6.title': 'E-commerce',
+            'projects.project6.description': 'Tienda online completa con carrito de compras, pagos y panel administrativo.',
+            'projects.project7.title': 'Restaurante',
+            'projects.project7.description': 'Sitio web para restaurante con menú digital, reservas online y delivery.',
+            'projects.project8.title': 'Clínica Médica',
+            'projects.project8.description': 'Portal médico con sistema de citas, historiales y gestión de pacientes.',
+            'projects.project9.title': 'Catálogo de Videos',
+            'projects.project9.description': 'Sistema web para portafolio multimedia personal, ideal para fotógrafos y directores.'
+        },
+        en: {
+            // Navigation
+            'nav.home': 'Home',
+            'nav.about': 'About Me',
+            'nav.services': 'Services',
+            'nav.projects': 'Web Projects',
+            'nav.contact': 'Contact',
+
+            // Home Section
+            'home.title': 'Full-Stack Web Developer',
+            'home.description': 'Specialized in creating <strong>custom websites</strong> and modern web applications. With over 1.5 years of experience developing web solutions for various sectors: <em>corporate, healthcare, legal, real estate and more</em>. I master technologies like Python, JavaScript, PHP, Node.js and modern frameworks.',
+            'home.about_btn': 'About Me',
+            'home.projects_btn': 'View Projects',
+
+            // About Section
+            'about.title': 'About My Experience',
+            'about.intro': 'I am a <strong>full-stack</strong> web developer with over 1.5 years of experience creating custom web solutions for various sectors.',
+            'about.approach': 'My main focus is <em>custom web development</em>, adapting to the specific needs of each client. I have worked with companies from different industries: corporate, hospitals, agencies, local businesses, legal and real estate sectors.',
+            'about.technologies': '<strong>Technologies I master:</strong> Python (advanced), HTML5, CSS3, JavaScript, PHP, Node.js, Bootstrap and modern frameworks. I can handle both frontend and backend of any web project.',
+            'about.philosophy': 'My philosophy is simple: <em>every website should be unique</em> and perfectly reflect the client\'s identity and objectives. I don\'t use generic templates, everything is developed from scratch.',
+            'about.services_btn': 'View Services',
+
+            // Services Section
+            'services.custom.title': 'Professional Landing Pages',
+            'services.custom.description': '<strong>Conversion-focused</strong> landing pages with strategic design:<br><ul class="services-list"><li>Advanced SEO optimization</li><li>Smart forms</li><li>Floating buttons (WhatsApp)</li><li>Integrated analytics</li><li>Loading time &lt; 3 seconds</li><li>Backend: <strong>Python/PHP</strong></li></ul>',
+            'services.modern.title': 'Multi-Page Websites',
+            'services.modern.description': 'Complete websites with <strong>scalable architecture</strong>:<br><ul class="services-list"><li>Custom administrative panel</li><li>Multi-language system</li><li>Dark/light mode</li><li>Integrated blog</li><li>E-commerce ready</li><li>SSL certificates</li><li>Database: <strong>MySQL/PostgreSQL</strong></li><li>Automatic backup</li></ul>',
+            'services.projects_btn': 'View Projects',
+
+            // Contact Section
+            'contact.title': 'Need a Website?',
+            'contact.development': 'Full-Stack Web Development',
+            'contact.development_desc': 'Specialized in creating custom websites from scratch',
+            'contact.technologies': 'Technologies',
+            'contact.technologies_desc': 'Python, JavaScript, PHP, Node.js, HTML5, CSS3, Bootstrap',
+            'contact.response': 'Response Time',
+            'contact.response_desc': 'I respond to inquiries in less than 24 hours',
+            'contact.remote': 'Remote Work',
+            'contact.remote_desc': 'I serve clients from any geographical location',
+            'contact.guarantee': 'Guarantee',
+            'contact.guarantee_desc': 'Post-delivery support and guarantee on all my projects',
+
+            // Form
+            'form.name': 'Your name or company...',
+            'form.email': 'Your contact email...',
+            'form.subject': 'Type of web project (e.g.: E-commerce, Corporate, etc.)',
+            'form.message': 'Tell me about your web project: functionalities you need, approximate budget, delivery time...',
+            'form.submit': 'Send Inquiry',
+
+            // Modal
+            'modal.technologies': 'Technologies',
+            'modal.development': 'Development',
+            'modal.sector': 'Sector',
+            'modal.description': 'Description',
+            'modal.features': 'Main Features',
+            'modal.close': 'Close',
+            'modal.live_demo': 'View Live Demo',
+
+            // Footer
+            'footer.copyright': 'Copyright &copy; 2024 My Personal Portfolio. All rights reserved.',
+
+            // Projects Hover
+            'projects.project1.title': 'Corporate Website',
+            'projects.project1.description': 'Professional website for company with modern design and advanced functionalities.',
+            'projects.project2.title': 'Hospital System',
+            'projects.project2.description': 'Web platform for hospital management with administrative panel and database.',
+            'projects.project3.title': 'Digital Agency',
+            'projects.project3.description': 'Dynamic website for agency with interactive portfolio and contact forms.',
+            'projects.project4.title': 'Legal Sector',
+            'projects.project4.description': 'Web platform for law firm with appointment system and case management.',
+            'projects.project5.title': 'Real Estate',
+            'projects.project5.description': 'Real estate portal with advanced search, filters and property gallery.',
+            'projects.project6.title': 'E-commerce',
+            'projects.project6.description': 'Complete online store with shopping cart, payments and administrative panel.',
+            'projects.project7.title': 'Restaurant',
+            'projects.project7.description': 'Restaurant website with digital menu, online reservations and delivery.',
+            'projects.project8.title': 'Medical Clinic',
+            'projects.project8.description': 'Medical portal with appointment system, records and patient management.',
+            'projects.project9.title': 'Video Catalog',
+            'projects.project9.description': 'Personal multimedia portfolio system, ideal for photographers and directors.'
+        }
+    };
+
+    function openProjectModal(projectId) {
+        const project = projectsData[projectId];
+        if (!project) return;
+
+        // Llenar el modal con los datos del proyecto (usando idioma actual)
+        const title = typeof project.title === 'object' ? project.title[currentLanguage] : project.title;
+        const description = typeof project.description === 'object' ? project.description[currentLanguage] : project.description;
+        const sector = typeof project.sector === 'object' ? project.sector[currentLanguage] : project.sector;
+        const features = typeof project.features === 'object' ? project.features[currentLanguage] : project.features;
+
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalDescription').textContent = description;
+        document.getElementById('modalTechnologies').textContent = project.technologies;
+        document.getElementById('modalTime').textContent = project.time;
+        document.getElementById('modalSector').textContent = sector;
+        document.getElementById('modalLiveDemo').href = project.liveDemo;
+
+        // Crear slider de imágenes
+        createImageSlider(project.images);
+
+        // Llenar las características en grid
+        const featuresGrid = document.getElementById('modalFeatures');
+        featuresGrid.innerHTML = '';
+        if (features && Array.isArray(features)) {
+            features.forEach(feature => {
+                const span = document.createElement('span');
+                span.className = 'feature-tag';
+                span.textContent = feature;
+                featuresGrid.appendChild(span);
+            });
+        }
+
+        // Mostrar el modal
+        document.getElementById('projectModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevenir scroll del fondo
+    }
+
+    function createImageSlider(images) {
+        const slidesWrapper = document.getElementById('modalSlides');
+        const dotsContainer = document.getElementById('sliderDots');
+
+        // Limpiar contenido anterior
+        slidesWrapper.innerHTML = '';
+        dotsContainer.innerHTML = '';
+
+        totalSlides = images.length;
+        currentSlide = 0;
+
+        // Crear slides
+        images.forEach((imageSrc, index) => {
+            const slide = document.createElement('div');
+            slide.className = 'slide-item';
+            slide.innerHTML = `<img src="${imageSrc}" alt="Screenshot ${index + 1}" />`;
+            slidesWrapper.appendChild(slide);
+
+            // Crear dots
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            dot.onclick = () => goToSlide(index);
+            dotsContainer.appendChild(dot);
+        });
+
+        updateSlider();
+    }
+
+    function changeSlide(direction) {
+        currentSlide += direction;
+        if (currentSlide >= totalSlides) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = totalSlides - 1;
+        updateSlider();
+    }
+
+    function goToSlide(slideIndex) {
+        currentSlide = slideIndex;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const slidesWrapper = document.getElementById('modalSlides');
+        const dots = document.querySelectorAll('.dot');
+
+        // Mover slides
+        slidesWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        // Actualizar dots
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    function closeProjectModal() {
+        document.getElementById('projectModal').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restaurar scroll
+    }
+
+    // Cerrar modal al hacer click fuera de él
+    window.onclick = function(event) {
+        const modal = document.getElementById('projectModal');
+        if (event.target == modal) {
+            closeProjectModal();
+        }
+    }
+
+    // Sistema de Traducciones
+    function changeLanguage(lang) {
+        currentLanguage = lang;
+
+        // Actualizar botones activos
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+
+        // Aplicar traducciones
+        applyTranslations();
+
+        // Guardar preferencia
+        localStorage.setItem('preferredLanguage', lang);
+    }
+
+    function applyTranslations() {
+        // Traducir elementos con data-translate
+        const elements = document.querySelectorAll('[data-translate]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                element.innerHTML = translations[currentLanguage][key];
+            }
+        });
+
+        // Traducir placeholders
+        const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+        placeholderElements.forEach(element => {
+            const key = element.getAttribute('data-translate-placeholder');
+            if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                element.placeholder = translations[currentLanguage][key];
+            }
+        });
+    }
+
+    // Cargar idioma guardado al iniciar
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedLang = localStorage.getItem('preferredLanguage') || 'es';
+        changeLanguage(savedLang);
+    });
+
+    // Función para el menú hamburguesa móvil
+    function toggleMobileNav() {
+        const nav = document.getElementById('main-nav');
+        const hamburger = document.querySelector('.hamburger-btn');
+        const overlay = document.querySelector('.mobile-overlay');
+
+        nav.classList.toggle('mobile-open');
+        hamburger.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
+
+    function closeMobileNav() {
+        const nav = document.getElementById('main-nav');
+        const hamburger = document.querySelector('.hamburger-btn');
+        const overlay = document.querySelector('.mobile-overlay');
+
+        nav.classList.remove('mobile-open');
+        hamburger.classList.remove('active');
+        overlay.classList.remove('active');
+    }
+
+    // Cerrar menú móvil al hacer click en un enlace
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 749) {
+                    closeMobileNav();
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
