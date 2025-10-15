@@ -96,7 +96,6 @@
   win.innerHTML = `
     <div class="angel-chat-header">
       <span>${BOT_NAME}</span>
-      <span style="font-size:12px;opacity:0.7;">Online</span>
     </div>
     <div class="angel-chat-messages" id="angel-messages"></div>
     <div class="angel-chat-input">
@@ -114,7 +113,7 @@
   const closeChatBtn = document.createElement("span");
   closeChatBtn.innerHTML = "&times;";
   closeChatBtn.title = "Cerrar chat";
-  closeChatBtn.style.cssText = "position:absolute;top:10px;right:18px;font-size:2rem;cursor:pointer;z-index:10;color:#fff;opacity:0.7;transition:opacity 0.2s;";
+  closeChatBtn.style.cssText = "position:absolute;right:18px;font-size:2rem;cursor:pointer;z-index:10;color:#fff;opacity:0.7;transition:opacity 0.2s;";
   closeChatBtn.addEventListener("mouseenter",()=>closeChatBtn.style.opacity="1");
   closeChatBtn.addEventListener("mouseleave",()=>closeChatBtn.style.opacity="0.7");
   closeChatBtn.addEventListener("click",()=>{
