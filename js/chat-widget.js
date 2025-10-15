@@ -1,7 +1,7 @@
 (() => {
   // 🔧 CONFIGURACIÓN
   const BOT_ID = "webdev"; // Cambia esto según el bot que uses
-  const BACKEND_URL = "http://localhost:3000"; // Cambia a tu URL de producción
+  const BACKEND_URL = "https://bots-ai-websites.onrender.com"; // Cambia a tu URL de producción
   const ENDPOINT = `${BACKEND_URL}/api/webchat/${BOT_ID}/message`;
   const BOT_NAME = "Personal AI Agent"; // Cambia según el bot
 
