@@ -28,9 +28,9 @@
   position: fixed;
   right: 20px;
   bottom: 100px;
-  width: 420px;
+  width: 450px;
   max-width: calc(100% - 40px);
-  height: 600px;
+  height: 550px;
   max-height: 90vh;
   z-index: 9999;
   background: #111827; /* gris oscuro */
@@ -40,6 +40,34 @@
   box-shadow: 0 10px 28px rgba(0,0,0,0.55);
   overflow: hidden;
   font-family: system-ui, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .angel-chat-window {
+    right: 10px;
+    left: auto;
+    bottom: 80px;
+    width: 98vw;
+    max-width: 420px;
+    height: 70vh !important;
+    max-height: 80vh !important;
+    border-radius: 16px;
+  }
+  .angel-chat-label {
+    right: 20px;
+    bottom: 100px;
+    max-width: 90vw;
+  }
+}
+
+.angel-chat-window {
+  opacity: 0;
+  transform: scale(0.7) translateY(60px);
+  transition: opacity 0.35s cubic-bezier(.4,1.4,.6,1), transform 0.35s cubic-bezier(.4,1.4,.6,1);
+}
+.angel-chat-window.angel-chat-open {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 /* Etiqueta flotante para el chat */
 .angel-chat-label {
